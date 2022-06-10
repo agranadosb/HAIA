@@ -11,13 +11,13 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from torchinfo import summary
 
-from ddvie.conf.env import EPOCHS, STEPS_FOR_APPLY_GRADIENT, LOG_DIR
-from ddvie.constants import CLASSES, SCALES, ANCHORS
-from ddvie.data import VOCDataset, load_datasets
-from ddvie.model import YoloV3
-from ddvie.model.loss import YoloV3Loss
-from ddvie.utils.analysis import show_prediction
-from ddvie.utils.data import normalize_transformation
+from haia.conf.env import EPOCHS, STEPS_FOR_APPLY_GRADIENT, LOG_DIR
+from haia.constants import CLASSES, SCALES, ANCHORS
+from haia.data import VOCDataset, load_datasets
+from haia.model import YoloV3
+from haia.model.loss import YoloV3Loss
+from haia.utils.analysis import show_prediction
+from haia.utils.data import normalize_transformation
 
 DEVICE = torch_device("cuda" if cuda.is_available() else "cpu")
 

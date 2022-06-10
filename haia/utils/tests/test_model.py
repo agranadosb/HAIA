@@ -1,8 +1,8 @@
 import numpy as np
 import torch
 
-from ddvie.utils.model import prediction_to_boxes, to_grounded
-from ddvie.utils.tests.base_test import TestBaseUtils
+from haia.utils.model import prediction_to_boxes, to_grounded
+from haia.utils.tests.base_test import TestBaseUtils
 
 
 class TestUtilsModel(TestBaseUtils):

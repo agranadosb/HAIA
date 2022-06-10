@@ -1,7 +1,7 @@
 import torch
 
-from ddvie.utils.boxes import to_box, box_area, intersection_over_union, to_yolo
-from ddvie.utils.tests.base_test import TestBaseUtils
+from haia.utils.boxes import to_box, box_area, intersection_over_union, to_yolo
+from haia.utils.tests.base_test import TestBaseUtils
 
 
 class TestUtilsBoxes(TestBaseUtils):

@@ -6,11 +6,11 @@ import numpy as np
 import torchvision.transforms as T  # noqa
 from torch import Tensor
 
-from ddvie.constants.types import TYPE_DATA
-from ddvie.constants import COLORS
-from ddvie.utils.data import data_to_list
-from ddvie.utils.model import to_grounded
-from ddvie.utils.text import text_ellipsis
+from haia.constants.types import TYPE_DATA
+from haia.constants import COLORS
+from haia.utils.data import data_to_list
+from haia.utils.model import to_grounded
+from haia.utils.text import text_ellipsis
 
 
 def show_bounding_boxes(

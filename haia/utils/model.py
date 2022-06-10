@@ -4,9 +4,9 @@ import torch
 from torch import Tensor
 from torchvision.ops import nms
 
-from ddvie.conf.env import SCORE_THRESHOLD
-from ddvie.constants import SCALES, CLASSES
-from ddvie.utils.boxes import to_box
+from haia.conf.env import SCORE_THRESHOLD
+from haia.constants import SCALES, CLASSES
+from haia.utils.boxes import to_box
 
 
 def prediction_to_boxes(predictions: Tensor, anchors: Tensor, scale: int) -> Tensor:
@@ -96,13 +96,13 @@ def to_grounded(
         The dimensions of the image.
     anchors_scale : int
         Number of anchors per scale.
-    score_threshold : float = `ddvie.constants.SCORE_THRESHOLD`
+    score_threshold : float = `haia.constants.SCORE_THRESHOLD`
         The threshold to filter the predictions.
     nms_threshold : float = 0.4
         The threshold to apply non-maximum suppression to result boxes.
-    classes : List[str] = `ddvie.constants.CLASSES`
+    classes : List[str] = `haia.constants.CLASSES`
         The classes labels.
-    scales : List[int] = `ddvie.constants.SCALES`
+    scales : List[int] = `haia.constants.SCALES`
         The scales of the predictions.
 
     Returns

@@ -6,9 +6,9 @@ import torch
 from albumentations.pytorch import ToTensorV2
 from torch import Tensor
 
-from ddvie.constants import SCALES, ANCHORS, CLASSES
-from ddvie.constants.types import TYPE_OBJECT, TYPE_DATA, TYPE_PAIR_YOLO
-from ddvie.utils.boxes import to_yolo, iou_width_height
+from haia.constants import SCALES, ANCHORS, CLASSES
+from haia.constants.types import TYPE_OBJECT, TYPE_DATA, TYPE_PAIR_YOLO
+from haia.utils.boxes import to_yolo, iou_width_height
 
 
 def serialize_object(
@@ -224,11 +224,11 @@ def to_prediction(
         The image.
     image_data : TYPE_RAW_DATA
         The image data.
-    scales : List[int] = ddvie.constants.SCALES, optional
+    scales : List[int] = haia.constants.SCALES, optional
         Scales to use.
-    anchors : Tensor = ddvie.constants.ANCHORS, optional
+    anchors : Tensor = haia.constants.ANCHORS, optional
         Anchors to use.
-    classes : List[str] = ddvie.constants.CLASSES, optional
+    classes : List[str] = haia.constants.CLASSES, optional
         Classes to use.
     transforms : Optional[album.Compose] = None, optional
         Transforms to use.

@@ -1,3 +1,3 @@
-from ddvie.cli import main
+from haia.cli import main
 
 main()

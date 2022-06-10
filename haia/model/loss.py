@@ -2,7 +2,7 @@ import torch
 from torch import Tensor
 from torch import nn
 
-from ddvie.utils.boxes import intersection_over_union
+from haia.utils.boxes import intersection_over_union
 
 
 class YoloV3Loss(nn.Module):

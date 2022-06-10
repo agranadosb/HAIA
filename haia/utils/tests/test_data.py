@@ -3,7 +3,7 @@ from unittest import TestCase
 import numpy as np
 import torch
 
-from ddvie.utils.data import (
+from haia.utils.data import (
     serialize_object,
     serialize,
     data_to_list,

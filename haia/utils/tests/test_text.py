@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from ddvie.utils.text import text_ellipsis
+from haia.utils.text import text_ellipsis
 
 
 class TestUtilsModel(TestCase):
